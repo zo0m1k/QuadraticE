@@ -3,19 +3,19 @@ window.onload = function(){
 		$("#any").text("");
 		var a, b, c, choose, d;
 	function write(){
-		a= + prompt("ax^2 + bx + c = 0\na =");
-		b= + prompt(a+"x^2 + bx + c = 0\nb =");
-		c= + prompt(a+"x^2 + "+b+"x + c = 0\nc =");
-		choose = + prompt(a+"x^2 + "+b+"x + "+c+" = 0\n1. Поетапно\n 2. Відразу\n 3. Ввести заново");
+		a= + prompt("ax² + bx + c = 0\na =");
+		b= + prompt(a+"x² + bx + c = 0\nb =");
+		c= + prompt(a+"x² + "+b+"x + c = 0\nc =");
+		choose = + prompt(a+"x² + "+b+"x + "+c+" = 0\n1. Поетапно\n 2. Відразу\n 3. Ввести заново");
 		d = b*b-(4*a*c);
 	}
 	function verif(){
 		switch(choose){
 			case 1:
-			$("#any").append(a,"x^2 + ",b, "x + ",c, " = 0", "</br></br>",
-			"1. Знаходимо дискримінант за формулою D = b^2 - 4ac:</br>D = ",b,"^2 - 4 * ",a," * ",c," = ",d,"</br>");
+			$("#any").append(a,"x² + ",b, "x + ",c, " = 0", "</br></br>",
+			"1. Знаходимо дискримінант за формулою D = b² - 4ac:</br>D = ",b,"² - 4 * ",a," * ",c," = ",d,"</br>");
 			if (d<0){
-				$("#any").append(d," < 0</br></br> Рівняння немає коренів");
+				$("#any").append(d," < 0</br></br> Рівняння не має коренів");
 			} else
 			if (d==0){
 				$("#any").append("D = 0</br></br> Рівняння має 1 корінь</br></br>",
@@ -30,7 +30,7 @@ window.onload = function(){
 			break;
 			case 2:
 			if(d<0){
-				$("#any").append("D = ",d," < 0</br> Рівняння немає коренів");
+				$("#any").append("D = ",d," < 0</br> Рівняння не має коренів");
 			} else if(d==0){
 				$("#any").append("D = ",d,"</br> Рівняння має 1 корінь</br> x = ",-b/(2*a));
 			} else if(d>0){
