@@ -9,17 +9,17 @@ html, body{
     width: auto;
     height: auto;
     font-size: 14pt;
-    left:2%;
+    left: 2%;
 }
 .butt{
     position: absolute;
-    left:85%;
+    left: 85%;
     width: 150px;
     height: 30px;
-    border:0;
+    border: 0;
     background-color: gray;
     font-size: 12pt;
-    color:white;
+    color: white;
     transition: 0.3s;
 }
 .butt:hover{
